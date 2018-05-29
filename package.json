@@ -1,0 +1,21 @@
+{
+  "name": "react-modules",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lerna-add": "lerna add",
+    "lerna-run": "lerna run",
+    "bootstrap": "lerna bootstrap",
+    "lerna-publish": "lerna publish",
+    "clean": "lerna clean --yes",
+    "postinstall": "lerna run prepare",
+    "start": "lerna run --parallel start",
+    "docs": "lerna run --parallel docs"
+  },
+  "devDependencies": {
+    "lerna": "2.11.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
