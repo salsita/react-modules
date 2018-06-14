@@ -1,6 +1,6 @@
 {
   "name": "@salsita/react-router",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "repository": "github:salsita/react-modules",
   "files": [
@@ -17,7 +17,7 @@
     "docs": "jsdoc2md --heading-depth 3 --template .jsdoc/README.hbs src/*.js src/*/*.js > README.md"
   },
   "dependencies": {
-    "@salsita/react-core": "^0.1.0",
+    "@salsita/react-core": "^1.0.0",
     "prop-types": "^15.6.0",
     "redux-router5": "^5.2.0",
     "reselect": "^3.0.1",
