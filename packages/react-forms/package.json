@@ -1,0 +1,35 @@
+{
+  "name": "@salsita/react-forms",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "github:salsita/react-modules",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "yarn build",
+    "start": "yarn build --watch -q",
+    "docs": "jsdoc2md --heading-depth 3 --template .jsdoc/README.hbs src/*.js src/*/*.js > README.md"
+  },
+  "dependencies": {
+    "email-validator": "^1.1.1",
+    "prop-types": "^15.6.0",
+    "react-select": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "redux-form": "^7.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "jsdoc-to-markdown": "4.0.1"
+  }
+}

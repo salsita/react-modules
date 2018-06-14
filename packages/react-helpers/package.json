@@ -1,0 +1,29 @@
+{
+  "name": "@salsita/react-helpers",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "github:salsita/react-modules",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "yarn build",
+    "start": "yarn build --watch -q",
+    "docs": "jsdoc2md --heading-depth 3 --template .jsdoc/README.hbs src/*.js > README.md"
+  },
+  "peerDependencies": {
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "jsdoc-to-markdown": "4.0.1"
+  }
+}
