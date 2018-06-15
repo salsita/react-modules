@@ -1,5 +1,5 @@
-import { CrudActions } from './crud-actions';
-import { crudReducer } from './crud-reducer';
+export { CrudActions } from './crud-actions';
+export { crudReducer } from './crud-reducer';
 
 export {
   crudSaga,
