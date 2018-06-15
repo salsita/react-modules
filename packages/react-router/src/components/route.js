@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { startsWithSegment, endsWithSegment } from 'router5-helpers';
 
-import { RouterSelectors } from '../routing-selectors';
+import { RouterSelectors } from '../router-selectors';
 
 const RouteComponent = ({
   route: { name },
